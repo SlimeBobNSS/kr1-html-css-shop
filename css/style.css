@@ -141,6 +141,14 @@ html {
   border-color: var(--color-primary);
 }
 
+.product-card--featured {
+  border-color: var(--color-primary);
+}
+
+.product-card--discount {
+  border-color: var(--color-danger);
+}
+
 .product-card__title {
   margin: 0;
 }
