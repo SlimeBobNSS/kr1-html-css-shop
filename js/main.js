@@ -7,13 +7,9 @@ const successMessage = document.getElementById('success-message');
 
 orderButtons.forEach((button) => {
   button.addEventListener('click', () => {
-
     const productName = button.dataset.product;
-
     selectedProductInput.value = productName;
-
-    successMessage.hidden = true; 
-
+    successMessage.hidden = true;
     orderDialog.showModal();
   });
 });
@@ -26,7 +22,6 @@ orderForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const formElements = Array.from(orderForm.elements);
-
   formElements.forEach((element) => {
     if (element.willValidate) {
       element.removeAttribute('aria-invalid');
